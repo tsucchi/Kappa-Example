@@ -1,0 +1,22 @@
+# NAME
+
+Kappa::Example -
+
+# SYNOPSIS
+
+    use Kappa::Example;
+
+# DESCRIPTION
+
+Kappa::Example is
+
+# AUTHOR
+
+Takuya Tsuchida <tsucchi {at} cpan.org>
+
+# SEE ALSO
+
+# LICENSE
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself.
