@@ -2,6 +2,7 @@
 use strict;
 use warnings;
 use DBI;
+use FindBin;
 use lib "$FindBin::RealBin/../lib";
 use MilkyHolmes::DB;
 
