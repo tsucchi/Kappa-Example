@@ -1,12 +1,12 @@
-package MilkyHolms::DB;
+package MilkyHolmes::DB;
 use parent qw(Kappa);
 use strict;
 use warnings;
 
 sub new {
     my ($class, $dbh, $option_href) = @_;
-    $option_href->{row_namespace}   = 'MilkyHolms::DB::Row';
-	$option_href->{table_namespace} = 'MilkyHolms::DB::Table';
+    $option_href->{row_namespace}   = 'MilkyHolmes::DB::Row';
+	$option_href->{table_namespace} = 'MilkyHolmes::DB::Table';
 	my $self = $class->SUPER::new($dbh, $option_href);
 	bless $self, $class;
 }

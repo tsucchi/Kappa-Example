@@ -2,8 +2,8 @@
 use strict;
 use warnings;
 use DBI;
-use lib qw(../lib);
-use MilkyHolms::DB;
+use lib "$FindBin::RealBin/../lib";
+use MilkyHolmes::DB;
 
 
 # テーブル作成
@@ -23,7 +23,7 @@ CREATE TABLE toys (
 );
 ");
 
-my $db = MilkyHolms::DB->new($dbh);
+my $db = MilkyHolmes::DB->new($dbh);
 $db->insert('toys', { id => 1, name => 'サイコキネシス' });
 $db->insert('toys', { id => 2, name => 'ダイレクトハック' });
 $db->insert('toys', { id => 3, name => 'トライアセンド' });

@@ -3,7 +3,8 @@ use strict;
 use warnings;
 use DBI;
 use Kappa;
-use lib qw(../lib);
+use FindBin;
+use lib "$FindBin::RealBin/../lib";
 
 # テーブル作成
 my $dbh = DBI->connect("dbi:SQLite:dbname=:memory:",'','');
@@ -23,7 +24,7 @@ CREATE TABLE toys (
 ");
 
 # Kappa オブジェクト作成
-my $db = Kappa->new($dbh, { row_namespace => 'MilkyHolms::DB::Row' });
+my $db = Kappa->new($dbh, { row_namespace => 'MilkyHolmes::DB::Row' });
 $db->insert('toys', { id => 1, name => 'サイコキネシス' });
 $db->insert('toys', { id => 2, name => 'ダイレクトハック' });
 $db->insert('toys', { id => 3, name => 'トライアセンド' });

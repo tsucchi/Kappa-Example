@@ -1,4 +1,4 @@
-package MilkyHolms::DB::Row;
+package MilkyHolmes::DB::Row;
 use parent qw(Kappa::Row);
 use strict;
 use warnings;

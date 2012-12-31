@@ -1,5 +1,5 @@
-package MilkyHolms::DB::Table::detective;
-use parent qw(MilkyHolms::DB::Table);
+package MilkyHolmes::DB::Table::detective;
+use parent qw(MilkyHolmes::DB::Table);
 use strict;
 use warnings;
 
